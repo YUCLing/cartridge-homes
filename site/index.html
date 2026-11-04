@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>cartridge.homes</title>
+<meta name="description" content="cartridge.homes — pages for the communities we run.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#a3345a" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151011" media="(prefers-color-scheme: dark)">
+<style>
+  :root{
+    --bg:#fbf8f7; --surface:#fff; --text:#251b1f; --muted:#6f5e65;
+    --accent:#a3345a; --border:#e9dcd6;
+    --sans:ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#151011; --surface:#1d1618; --text:#f3e9ec; --muted:#b7a4ab; --accent:#ec8fa9; --border:#33262a; }
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  body{
+    margin:0;min-height:100vh;display:grid;place-items:center;padding:32px 20px;
+    background:var(--bg);color:var(--text);
+    font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;
+  }
+  main{width:100%;max-width:30rem}
+  .mark{width:56px;height:56px;border-radius:16px;display:block}
+  h1{font-size:clamp(1.6rem,5vw,2.1rem);letter-spacing:-.03em;font-weight:680;margin:22px 0 6px}
+  .lede{color:var(--muted);margin:0 0 26px}
+  .card{
+    display:block;padding:18px 20px;border:1px solid var(--border);border-radius:14px;
+    background:var(--surface);text-decoration:none;color:inherit;
+    transition:border-color .15s, transform .15s;
+  }
+  .card:hover{border-color:var(--accent)}
+  .card span{display:block}
+  .card .name{font-weight:650}
+  .card .note{font-size:.85rem;color:var(--muted);margin-top:3px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+<body>
+<main>
+  <img class="mark" src="/favicon.svg" alt="">
+  <h1>cartridge.homes</h1>
+  <p class="lede">The site is being assembled. One page exists so far:</p>
+  <a class="card" href="/privacy.html">
+    <span class="name">Core Mita — Privacy Policy</span>
+    <span class="note">English · Русский · 简体中文 · 繁體中文</span>
+  </a>
+</main>
+</body>
+</html>

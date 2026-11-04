@@ -1,0 +1,232 @@
+<article data-lang="zh-Hans" data-updated="2026-11-03"
+         data-title="隐私政策 — Core Mita"
+         data-description="Core Mita 审核机器人如何处理你的数据：读取什么、在 Discord 留下什么，以及如何删除。"
+         data-note="本译文仅供参考，以英文版本为准。"
+         data-stale="译文可能滞后于当前版本，应以英文原文为准。">
+
+  <header class="hero">
+    <h1 id="content-title">隐私政策</h1>
+    <p class="lede">Core Mita 会读取消息，用来过滤违法或违反服务器规则的内容。本页说明它具体读取什么、会在 Discord 留下什么，以及如何删除这些内容。</p>
+    <div class="meta">
+      <span class="chip chip--accent">生效日期 2026 年 11 月 3 日</span>
+    </div>
+  </header>
+
+  <div class="glance">
+    <article>
+      <h2><span class="dot" aria-hidden="true"></span>读取</h2>
+      <p>它能看到的频道中的消息，以及它所扫描的图片和附件里的文字。只在内存中处理，随后丢弃。</p>
+    </article>
+    <article>
+      <h2><span class="dot dot--keep" aria-hidden="true"></span>存储</h2>
+      <p><strong>不保存任何关于你的数据。</strong>只保存服务器设置——频道 ID、关键词列表。每条处理通知都会发到私密的管理频道，机器人不保留副本。</p>
+    </article>
+    <article>
+      <h2><span class="dot dot--never" aria-hidden="true"></span>绝不做</h2>
+      <p>不出售、不投放广告、不建立画像、<strong>不把内容送往外部分析服务</strong>、不用你的消息训练 AI。</p>
+    </article>
+  </div>
+
+  <div class="layout">
+    <nav class="toc" aria-label="本页内容">
+      <p>本页内容</p>
+      <ol>
+        <li><a href="#who">本政策涉及谁</a></li>
+        <li><a href="#does">Core Mita 做什么</a></li>
+        <li><a href="#data">处理什么、去了哪里</a></li>
+        <li><a href="#never">我们绝不做的事</a></li>
+        <li><a href="#basis">处理依据</a></li>
+        <li><a href="#access">谁能看到</a></li>
+        <li><a href="#rights">你的权利</a></li>
+        <li><a href="#requests">访问与删除</a></li>
+        <li><a href="#security">如何保护</a></li>
+        <li><a href="#age">年龄</a></li>
+        <li><a href="#website">本网站</a></li>
+        <li><a href="#changes">变更</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ol>
+    </nav>
+
+    <div class="content">
+
+      <section id="who">
+        <h2><span class="num">1</span>本政策涉及谁<a class="anchor" href="#who" aria-label="链接到本节">#</a></h2>
+        <p><strong>Core Mita</strong> 是本服务器管理团队运营的审核与实用机器人。它只在这里运行。</p>
+        <ul>
+          <li>本页只介绍 Core Mita。Discord 依照自己的<a href="https://discord.com/privacy">隐私政策</a>处理你的数据；服务器上的其他机器人各有各的政策。</li>
+          <li>在适用 GDPR 等数据保护法的地方，本页所述数据的控制者是我们。</li>
+          <li>本机器人是独立的社区项目：Discord Inc. 不运营它，项目与该公司没有关联，也未获其认可。</li>
+        </ul>
+      </section>
+
+      <section id="does">
+        <h2><span class="num">2</span>Core Mita 做什么<a class="anchor" href="#does" aria-label="链接到本节">#</a></h2>
+        <p>Core Mita 会读取它有权访问的频道中发布的消息，把文本与过滤器（关键词和模式）比对，找出可能违法或违反服务器规则的内容。在适用的情况下，它也会识别图片和附件中的文字。命中结果会发到私密的管理频道，由管理员决定怎么处理：删除消息、警告、禁言、封禁，或者什么都不做。</p>
+        <p>检查在<strong>机器人内部</strong>、在运行它的机器上完成。Core Mita 没有单独的网站或后端，也不会把消息内容发送给任何外部服务去做分析、翻译或存储。</p>
+        <p>管理员采取措施时，Core Mita 会在该频道发一条简短通知：采取的动作、原因、你的用户 ID、执行人，以及消息链接。这条通知就是一条普通的 Discord 消息。机器人不保留副本，管理员删除后它就不存在了。</p>
+        <p>当你的账号发生变动时——警告、禁言、封禁——Core Mita 也可能给你发私信。这些通知是单向的，内容不会被记录。</p>
+      </section>
+
+      <section id="data">
+        <h2><span class="num">3</span>处理什么，以及这些数据去了哪里<a class="anchor" href="#data" aria-label="链接到本节">#</a></h2>
+        <p>这是完整清单。机器人自己的数据库里只有一样东西：服务器设置。</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">数据</th>
+                <th scope="col">具体内容</th>
+                <th scope="col">机器人是否存储</th>
+                <th scope="col">去向</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">消息文本</th>
+                <td>机器人从可见频道收到的文本、嵌入内容和链接预览。</td>
+                <td><span class="badge badge--no">否</span></td>
+                <td>在内存中检查后立即丢弃。</td>
+              </tr>
+              <tr>
+                <th scope="row">图片和附件</th>
+                <td>下载到机器人所在机器、识别其中文字的文件（OCR）。不会上传到任何地方。</td>
+                <td><span class="badge badge--no">否</span></td>
+                <td>读取后立即删除。</td>
+              </tr>
+              <tr>
+                <th scope="row">命中信息</th>
+                <td>命中的是哪条规则或哪个关键词。</td>
+                <td><span class="badge badge--no">否</span></td>
+                <td>采取措施时写入管理通知。</td>
+              </tr>
+              <tr>
+                <th scope="row">处理通知</th>
+                <td>采取的动作、原因、你的用户 ID、管理员 ID、时间、消息链接和备注。</td>
+                <td><span class="badge badge--no">否</span></td>
+                <td>发布到私密管理频道，直到被管理员删除。</td>
+              </tr>
+              <tr>
+                <th scope="row">处罚</th>
+                <td>警告、禁言和封禁及其期限。</td>
+                <td><span class="badge badge--no">否</span></td>
+                <td>禁言和封禁由 Discord 执行。警告和备注只以管理频道里的通知形式存在。</td>
+              </tr>
+              <tr>
+                <th scope="row">服务器设置</th>
+                <td>服务器、频道和角色 ID，关键词与过滤列表，日志频道。</td>
+                <td><span class="badge badge--yes">是</span></td>
+                <td>机器人自己的数据库；机器人离开服务器时删除。</td>
+              </tr>
+              <tr>
+                <th scope="row">私信通知</th>
+                <td>告知你账号被采取措施的消息。</td>
+                <td><span class="badge badge--no">否</span></td>
+                <td>不记录。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">机器人数据库里只有服务器设置：没有用户 ID，没有消息文本，也没有谁说了什么的历史。通知保存在管理频道里，不会自动过期——机器人没有存任何可以到期的东西。案子不再需要时由管理员删除，你也可以随时要求删除自己的部分（第 8 节）。</p>
+      </section>
+
+      <section id="never">
+        <h2><span class="num">4</span>我们绝不做的事<a class="anchor" href="#never" aria-label="链接到本节">#</a></h2>
+        <ul>
+          <li>不出售、不许可你的数据，也不与数据经纪商或广告网络共享。</li>
+          <li>不用于广告或营销；机器人不会向你发送与审核无关的消息。</li>
+          <li>不建立画像，不绘制你与其他用户的关系图，也不把不同服务器的记录拼成关于你的整体图像。</li>
+          <li>不把消息文本、图片或附件发送给任何外部 API——不用云端 OCR、不用翻译服务、不用 AI 服务商。</li>
+          <li>不用你的消息训练机器学习或 AI 模型。</li>
+          <li>不保存聊天记录，消息被删除后也不再保留其内容。</li>
+          <li>不维护自己的处理记录数据库。我们这边没有你的消息存档，也没有你的画像。</li>
+          <li>绝不索要密码、令牌或任何登录凭据。</li>
+        </ul>
+      </section>
+
+      <section id="basis">
+        <h2><span class="num">5</span>我们凭什么处理这些数据<a class="anchor" href="#basis" aria-label="链接到本节">#</a></h2>
+        <ul>
+          <li><strong>合法利益</strong>（GDPR 第 6(1)(f) 条）：维护社区安全、一致地执行规则、防止规避封禁、处理申诉。我们几乎不在自己的系统里保存东西，因此这一利益不会压过你的权利。</li>
+          <li><strong>法律义务</strong>（第 6(1)(c) 条）：法律或有效的法律请求要求我们保存或披露某些内容时。</li>
+          <li><strong>同意</strong>：我们不依赖同意来检查消息，因为审核是参与本服务器的条件。如果法律对某件具体的事要求同意，我们会单独征求。</li>
+          <li><strong>特殊类别数据</strong>：过滤器可能偶然匹配到泄露敏感信息的内容，但内容本身不会被保存。我们要求工作人员不要把这类细节写进备注；万一出现了，你可以要求删除。</li>
+          <li><strong>自动过滤</strong>：第一遍是自动的，但它本身不决定你在服务器中的状态。警告、禁言和封禁由管理员执行，任何处理都可以要求复核。</li>
+        </ul>
+      </section>
+
+      <section id="access">
+        <h2><span class="num">6</span>谁能看到<a class="anchor" href="#access" aria-label="链接到本节">#</a></h2>
+        <ul>
+          <li><strong>管理员</strong>中能进入管理频道的人，以及机器人的运营者。没有该频道权限的人看不到这些通知。</li>
+          <li><strong>我们的托管服务商</strong>，它提供运行机器人的机器。它只处理运行机器人所需的流量，不得用于其他目的；通知不在它的机器上。需要知道它的名称可以问管理团队。</li>
+          <li><strong>Discord</strong>——无论有没有机器人，消息都要经过 Discord 的系统；见 <a href="https://discord.com/privacy">Discord 隐私政策</a>。</li>
+          <li><strong>政府机关</strong>，仅在法律要求或为保护他人免受伤害所必需时。</li>
+        </ul>
+        <p>没有其他人。这套流程里没有广告伙伴、没有分析服务商、没有数据经纪商。</p>
+      </section>
+
+      <section id="rights">
+        <h2><span class="num">7</span>你的权利<a class="anchor" href="#rights" aria-label="链接到本节">#</a></h2>
+        <p>如果你适用 GDPR 或 UK GDPR，你有权访问、更正、删除你的数据，限制或反对处理，并以可携带格式取得数据。你也有权不受仅基于自动化处理的决定约束，并有权向所在国的监督机构投诉。</p>
+        <p>如果你在加利福尼亚州，你有权知道我们持有什么、删除、更正、拒绝出售或共享（我们两者都不做），并有权不因行使这些权利而受到差别对待。</p>
+        <p>要行使任何一项权利，请按第 8 节联系管理员。我们在 30 天内免费答复；在采取行动前，可能会请你确认账号属于你。</p>
+      </section>
+
+      <section id="requests">
+        <h2><span class="num">8</span>访问与删除请求<a class="anchor" href="#requests" aria-label="链接到本节">#</a></h2>
+        <div class="callout">
+          <h3>如何提出请求</h3>
+          <ol>
+            <li>联系任意管理员——通过服务器的支持或工单频道，或私信工作人员。</li>
+            <li>说明你的 Discord ID、你想要什么（副本、更正、删除），以及任何有助于定位那条通知的信息。</li>
+            <li>我们可能会请你用该账号本身发送请求，以确认是你本人。</li>
+            <li>我们在 30 天内确认并执行。如果需要更长时间，我们会说明原因。</li>
+          </ol>
+        </div>
+        <p><strong>我们删除什么：</strong>管理频道中关于你的通知，包括备注和消息链接。删除那条消息就是这里所说的删除——机器人没有别的副本。</p>
+        <p><strong>我们无法删除什么：</strong>封禁。禁言和封禁是 Discord 的功能，不是我们持有的记录，所以删除通知不会解除它们。如果你希望复核某项处罚，请在同一请求中说明。</p>
+        <p>Discord 可能在自己的备份中保留已删除的消息一段时间。那份副本不在我们的控制范围内，受 Discord 隐私政策约束。</p>
+      </section>
+
+      <section id="security">
+        <h2><span class="num">9</span>我们如何保护这些数据<a class="anchor" href="#security" aria-label="链接到本节">#</a></h2>
+        <p>几乎没有需要保护的东西。机器人数据库里是服务器设置，只有运营者持有的凭据才能访问。处理通知放在私密频道里，由 Discord 自己的权限把关，只有本来就有该权限的工作人员能看到。消息内容从不写入磁盘。本页通过 HTTPS 提供。</p>
+        <p>如果发生未经授权的访问并可能影响你的权利，我们会通知受影响的用户和 Discord（这是 Discord 开发者条款的要求），并修复原因。</p>
+      </section>
+
+      <section id="age">
+        <h2><span class="num">10</span>年龄<a class="anchor" href="#age" aria-label="链接到本节">#</a></h2>
+        <p>Discord 面向 13 岁及以上用户；如果当地法律规定的年龄更高，则以更高者为准。Core Mita 不面向儿童，我们也不会在知情的情况下保存儿童的数据。如果你认为某条通知里出现了未成年人的数据，请联系管理员，我们会删除。</p>
+      </section>
+
+      <section id="website">
+        <h2><span class="num">11</span>本网站<a class="anchor" href="#website" aria-label="链接到本节">#</a></h2>
+        <p>本页是静态文档：没有 Cookie、没有分析、没有追踪像素、没有第三方脚本或字体。浏览器只取一个文件，仅此而已。托管服务商可能为安全和防滥用保留常规访问日志（IP 地址、浏览器、请求时间）；这些日志不用于识别访客，也不与机器人持有的任何数据合并。</p>
+      </section>
+
+      <section id="changes">
+        <h2><span class="num">12</span>变更<a class="anchor" href="#changes" aria-label="链接到本节">#</a></h2>
+        <p>本政策顶部标有生效日期。如果我们改变 Core Mita 处理数据的方式，会更新该日期并在服务器上公告。如果你不同意变更，可以离开服务器并要求删除你的数据。</p>
+      </section>
+
+      <section id="contact">
+        <h2><span class="num">13</span>联系<a class="anchor" href="#contact" aria-label="链接到本节">#</a></h2>
+        <p>写信给服务器的<strong>任意管理员</strong>——在支持或工单频道，或从成员列表私信工作人员。这是最快的途径，也是我们会看的途径。</p>
+        <p>现任和前任成员都可以提出请求。如果你已离开或被移出服务器，可以直接私信管理员；如果联系不上，请通过机器人资料页上的邀请链接重新加入并开工单。</p>
+        <p>如果你认为 Core Mita 出错了——匹配错了、误删了消息、有 bug——用同样的方式告诉管理员。看这些消息的是同一批人。</p>
+      </section>
+
+      <footer>
+        <div class="links">
+          <a href="https://discord.com/privacy">Discord 隐私政策</a>
+          <a href="https://discord.com/terms">Discord 服务条款</a>
+          <a href="https://discord.com/guidelines">社区准则</a>
+          <a href="https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy">Discord 开发者政策</a>
+        </div>
+        <p>Core Mita 是本服务器的独立社区审核机器人。Discord 是 Discord Inc. 的商标；本项目与 Discord 无关联，也未获其认可。</p>
+        <p>生效日期：2026 年 11 月 3 日。</p>
+      </footer>
+
+    </div>
+  </div>
+</article>

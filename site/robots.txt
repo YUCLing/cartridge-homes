@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Add a Sitemap: line here once the site has more than a couple of pages.
